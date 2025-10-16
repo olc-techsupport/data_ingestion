@@ -1,4 +1,3 @@
-# data_ingestion
 # Pine Ridge Indian Reservation - Geospatial Data Ingestion Project
 
 ## Project Overview
@@ -46,29 +45,3 @@ This project provides a data ingestion pipeline for environmental and geospatial
 - **Temporal**: Daily (2015-present)
 - **Format**: HDF5, NetCDF, Zarr
 
-## Project Structure
-
-pine_ridge_project/
-├── README.md                          # This file
-├── requirements.txt                   # Python dependencies
-├── scripts/                          # Data ingestion scripts
-│   ├── usgs_nwis_ingest.py          # USGS hydrology
-│   ├── prism_daymet_ingest.py       # Climate data
-│   ├── cdl_ingest.py                # Crop classification
-│   ├── smap_ingest.py               # Soil moisture
-│   └── metadata_generator.py        # ISO 19115 metadata
-├── notebooks/                        # Analysis notebooks
-│   └── master_ingestion.ipynb       # Master workflow
-├── data/                            
-│   ├── boundaries/                  # Reservation boundaries
-│   │   └── pine_ridge_boundary.geojson
-│   ├── raw/                         # Raw downloads (not in git)
-│   └── processed/                   # Standardized datasets
-│       ├── hydrology/              
-│       ├── climate/                
-│       ├── landcover/              
-│       └── soil_moisture/          
-├── metadata/                        # ISO 19115 metadata files
-│   ├── *.xml                       # XML metadata
-│   └── *.json                      # JSON metadata
-└── .gitattributes                  # Git LFS configuration
